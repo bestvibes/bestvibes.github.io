@@ -1809,12 +1809,11 @@
 				-ms-transform: translateZ(0);
 				transform: translateZ(0);
 				opacity: 1.0;
-				margin: 0;
+				margin: auto;
 				position: absolute;
 				width: 100%;
-				/* because 4em max-width set in .main .content */
-				left: 2em;
-				right: 2em;
+				left: 0;
+				right: 0;
 				bottom: 5%;
 			}
 
