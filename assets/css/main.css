@@ -2002,6 +2002,7 @@
 		height: 5em;
 		line-height: 5em;
 		margin: 0;
+		text-align: center;
 		background: #39454b;
 		color: rgba(185, 186, 187, 0.5);
 		overflow: hidden;
@@ -2016,9 +2017,6 @@
 			}
 
 		#footer ul.actions {
-			position: absolute;
-			left: 1em;
-			top: 0.25em;
 			height: 5em;
 			line-height: 5em;
 			margin: 0;
