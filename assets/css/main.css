@@ -2103,6 +2103,61 @@
 		position: relative;
 	}
 
+	/* The container <div> - needed to position the dropup content */
+	.dropup {
+		position: relative;
+		display: inline-block;
+	}
+
+	/* Dropup Content (Hidden by Default) */
+	.dropup .dropup-menu {
+		visibility: hidden;
+		position: absolute;
+		bottom: 100%;
+		left: 50% !important;
+		transform: translateX(-50%) !important;
+		background-color: #39454b;
+		min-width: 60px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		-webkit-backface-visibility: hidden;
+
+		max-height: 0;
+		-webkit-transition: max-height 0.3s ease-out, visibility 0s linear 0.3s;
+		-moz-transition: max-height 0.3s ease-out, visibility 0s linear 0.3s;
+		-o-transition: max-height 0.3s ease-out, visibility 0s linear 0.3s;
+		transition: max-height 0.3s ease-out, visibility 0s linear 0.3s;
+		overflow: hidden;
+	}
+
+	/* Header inside the dropup */
+	.dropup .dropup-menu .dropup-header {
+		font-size: 90%;
+	}
+
+	/* Links inside the dropup */
+	.dropup .dropup-menu a {
+		padding: 0px 16px;
+		text-decoration: none;
+		display: block;
+		font-size: 75%;
+	}
+
+	/* Change color of dropup links on hover */
+	.dropup .dropup-menu a:hover {
+		background-color: #ddd;
+	}
+
+	/* Show the dropup menu on hover */
+	.dropup:hover .dropup-menu {
+		visibility: visible;
+		max-height: 500px;
+		-webkit-transition: visibility 0s, max-height 0.5s ease-in;
+		-moz-transition: visibility 0s, max-height 0.5s ease-in;
+		-o-transition: visibility 0s, max-height 0.5s ease-in;
+		transition: visibility 0s, max-height 0.5s ease-in;
+	}
+
 /* Who I Am */
 
 	#who-i-am {
