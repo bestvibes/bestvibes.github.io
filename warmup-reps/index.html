@@ -211,7 +211,7 @@
 						$(this).siblings('input').val(newWeight);
 						updateWorkout($(this).parent().siblings('ul'), $(this).siblings('input').val());
 					});
-					$('#' + shortTitle + "-" + shortExerciseName + '-decr').css({'padding-right': '10px'});
+					$('#' + shortTitle + "-" + shortExerciseName + '-decr').css({'padding-right': '10px', 'padding-left': '10px'});
 					$('#' + shortTitle + "-" + shortExerciseName + '-weight').live('blur', function() {
 						updateWorkout($(this).parent().siblings('ul'), $(this).val());
 					})
